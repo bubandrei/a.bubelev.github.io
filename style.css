@@ -37,6 +37,45 @@ button:hover{
     font-weight: 500;
     transition: 0.3s ease;
 }
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+#bar:hover
+/* #bar.active */{
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 991px) {
+    /* body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: coral;
+    }
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color: whitesmoke;
+    }*/
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+} 
+/* Mobile nav */
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+
 #home{
     background-image: url(img/back.jpg);
     width: 100%;
