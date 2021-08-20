@@ -1,5 +1,5 @@
 button{
-    font-size: 0.8rem;
+    font-size: 12px;
     font-weight: 700;
     outline: none;
     border: none;
@@ -8,7 +8,6 @@ button{
     padding: 13px 30px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0,3s ease;
 }
 button:hover{
     background-color: gray;
@@ -24,43 +23,19 @@ button:hover{
     transition: 0,3s ease;
 }
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar i:hover
-/*.navbar-light .navbar-nav .nav-link.active
-.navbar i.active*/
-{
-    color: coral;
+.navbar i:hover{
+    color: #ed0703;
 }
 .navbar i{
-    font-size: 1.2rem;
+    font-size: 20px;
     padding: 0 7px;
     cursor: pointer;
     font-weight: 500;
     transition: 0.3s ease;
 }
-#bar{
-    font-size: 1.5rem;
-    padding: 7px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s ease;
-    color: black;
-}
-#bar:hover
-/* #bar.active */{
-    color: whitesmoke;
-}
-
 @media only screen and (max-width: 991px) {
-    /* body > nav > div > button:hover,
-    body > nav > div > button:focus{
-        background-color: coral;
-    }
-    body > nav > div > button:hover #bar,
-    body > nav > div > button:focus #bar{
-        color: whitesmoke;
-    }*/
     #navbarSupportedContent > ul{
-        margin: 1rem;
+        margin: 16px;
         justify-content: flex-end;
         align-items: flex-end;
         text-align: right;
@@ -69,15 +44,14 @@ button:hover{
         padding: 10px 0;
     }
 } 
-/* Mobile nav */
 .navbar-light .navbar-toggler{
     border: none;
     outline: none;
 }
 
 
-#home{
-    background-image: url(img/back.jpg);
+.home{
+    background-image: url(A.-Module.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -87,6 +61,6 @@ button:hover{
     justify-content: center;
     align-items: flex-start;
 }
-#home span{
-    color: coral;
+.home span{
+    color: #ed0703;
 }
