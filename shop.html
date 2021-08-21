@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial</title>
+    <title>Shop</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -14,11 +14,38 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: darkgray;
+        }
+
+        .page-link:hover {
+            z-index: 2;
+            color: black;
+            text-decoration: none;
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: black;
+            background-color: #e9ecef;
+            border-color: lightgray;
+        }
+    </style>
 </head>
 
 <body>
-
-    <!--NAVIGATION-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
             <img src="img/logo1.png" alt="logo">
@@ -31,10 +58,10 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html" target="_blank">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html" target="_blank">Shop</a>
+                        <a class="nav-link" href="#">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -52,199 +79,185 @@
             </div>
         </div>
     </nav>
-    <section id="home">
-        <div class="container">
-            <h5>NEW ARRAIVALS</h5>
-            <h1><span>Best Price</span> This Year</h1>
-            <p>Shoomatic offers your very comfortable time<br>on walking and exercises.</p>
-            <button>Shop Now</button>
-        </div>
-    </section>
 
-    <section id="brand" class="container">
-        <div class="row m-0 py-5">
-            <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/1.png" alt="RightChek">
-            <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/2.png" alt="Cinderella">
-            <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/3.png" alt="SLS">
-            <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/4.png" alt="comedy">
-            <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/5.png" alt="RightCheck">
-            <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/6.png" alt="SkillStar">
-        </div>
-    </section>
-
-    <section id="new" class="w-100">
-        <div class="row p-0 m-0">
-            <div class="one col-lg-4 col-md-12 col-12 p-0">
-                <img class="img-fluid" src="img/new/1.jpg" alt="Sneakers">
-                <div class="details">
-                    <h2>Extreme Rare Sneakers</h2>
-                    <button class="text-uppercase">Shop now</button>
-                </div>
-            </div>
-            <div class="one col-lg-4 col-md-12 col-12 p-0">
-                <img class="img-fluid" src="img/new/2.jpg" alt="Clothes">
-                <div class="details">
-                    <h2>Awesome Blank Outfit</h2>
-                    <button class="text-uppercase">Shop now</button>
-                </div>
-            </div>
-            <div class="one col-lg-4 col-md-12 col-12 p-0">
-                <img class="img-fluid" src="img/new/3.jpg" alt="Sale">
-                <div class="details">
-                    <h2>Sportwear Up To 50% Off</h2>
-                    <button class="text-uppercase">Shop now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="featured" class="mt-5 pb-5">
-        <div class="container text-center mt-5 pb-5">
-            <h3>Our Featured</h3>
+    <section id="featured" class="mt-5 py-2">
+        <div class="container mt-5 py-5">
+            <h2>Our Featured</h2>
             <div>Here you can check out our new products with fair price on Corso</div>
         </div>
-        <div class="row mx-auto container-fluid">
+        <div class="row mx-auto container">
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/1.jpg" alt="product">
+                <!-- <img class="img-fluid mb-3" src="img/shop/1.jpg" alt="product"> -->
+                <img onclick="window.location.href='sproduct.html';" class="mb-3 img-fluid" src="img/shop/1.jpg"
+                    alt="product">
                 <h5 class="p-name">Sport Boots</h5>
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/2.jpg" alt="product">
+                <img class="img-fluid mb-3" src="img/shop/2.jpg" alt="product">
                 <h5 class="p-name">Sport Boots</h5>
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/3.jpg" alt="product">
+                <img class="img-fluid mb-3" src="img/shop/3.jpg" alt="product">
                 <h5 class="p-name">Sport Boots</h5>
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/4.jpg" alt="product">
+                <img class="img-fluid mb-3" src="img/shop/4.jpg" alt="product">
                 <h5 class="p-name">Sport Boots</h5>
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy now</button>
             </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/5.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/6.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/7.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/8.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/9.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/10.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/11.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/12.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/13.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/14.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/15.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/16.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/17.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/18.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/19.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/20.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/21.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/22.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/23.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/24.jpg" alt="product">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination mt-2">
+                    <li class="page-item">
+                        <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item" aria-current="page">
+                        <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
 
-    <section id="banner" class="mb-5 py-5">
-        <div class="container">
-            <h4>MID SEASON'S SALE</h4>
-            <h1>Autumn Collection <br> UP TO 80% OFF</h1>
-            <button>Shop Now</button>
-        </div>
-    </section>
 
-
-    <section id="clothes">
-        <div class="container text-center pb-5">
-            <h3>Dresses & Jumpsuits</h3>
-            <div>Here you can check out our new products with fair price on Corso</div>
-        </div>
-        <div class="row mx-auto container-fluid">
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/clothes/1.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/clothes/2.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/clothes/3.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/clothes/1.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="watches">
-        <div class="container text-center pb-5">
-            <h3>Best Watches</h3>
-            <div>Here you can check out our new products with fair price on Corso</div>
-        </div>
-        <div class="row mx-auto container-fluid">
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/watches/1.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/watches/2.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/watches/3.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/watches/4.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="shoes">
-        <div class="container text-center pb-5">
-            <h3>Running Shoes</h3>
-            <div>Here you can check out our new products with fair price on Corso</div>
-        </div>
-        <div class="row mx-auto container-fluid">
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/shoes/5.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/shoes/6.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/shoes/7.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/shoes/8.jpg" alt="product">
-                <h5 class="p-name">Sport Boots</h5>
-                <h4 class="p-price">$92.00</h4>
-                <button class="buy-btn">Buy now</button>
-            </div>
-        </div>
-    </section>
 
     <footer class="mt-5 py-5">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="img/logo2.png" alt="logo2">
-                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloremque modi quod, pariatur
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloremque modi quod,
+                    pariatur
                     ut, tempora corporis laborum voluptas suscipit ullam facilis vitae quaerat quas ex? Ipsam repellat
                     fugiat amet laudantium.</p>
             </div>
