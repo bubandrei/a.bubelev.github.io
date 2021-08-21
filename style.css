@@ -223,3 +223,32 @@ footer .copyright a:hover{
     color: whitesmoke;
     background-color: coral;
 }
+.sproduct{
+    margin: 60px 0;
+    padding-top: 60px;
+}
+.sproduct select{
+    display: block;
+    padding: 5px 10px;
+    margin: 20px 0px;
+}
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.buy-btn{
+    background-color: coral;
+    opacity: 1;
+    transition: 0.3s all;
+}
