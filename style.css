@@ -17,6 +17,7 @@ button:hover{
     font-size: 16px;
     top: 0;
     left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-nav .nav-link{
     padding: 0 20px;
@@ -89,4 +90,136 @@ button:hover{
 }
 #home span{
     color: coral;
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.3);
+}
+#new .one .details button{
+    font-size: 14px;
+    color: black;
+    background: none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+#new .one .details button:hover{
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.product{
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    background-color: coral;
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-btn{
+    opacity: 1;
+}
+#banner{
+    background-image: url(img/banner/2.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner h4{
+    color: #d8d8d8;
+}
+#banner h1{
+    color: #d8d8d8;
+}
+#banner button{
+    background-color: coral;
+}
+footer{
+    background-color: darkgray;
+}
+footer h5{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+footer h6{
+    color: whitesmoke;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 12px;
+    color: whitesmoke;
+}
+footer li a:hover{
+    color: white;
+}
+footer p{
+    color: whitesmoke;
+    font-size: 12px;
+}
+footer .copyright a{
+    color: black;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+footer .copyright a:hover{
+    color: whitesmoke;
+    background-color: coral;
 }
