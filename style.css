@@ -78,7 +78,7 @@ button:hover{
 
 
 #home{
-    background-image: url(img/back.jpg);
+    background-image: url(img/banner/back.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
