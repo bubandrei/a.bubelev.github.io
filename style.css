@@ -29,7 +29,7 @@ button:hover{
 /*.navbar-light .navbar-nav .nav-link.active
 .navbar i.active*/
 {
-    color: coral;
+    color: #b51f29;
 }
 .navbar i{
     font-size: 1.2rem;
@@ -89,7 +89,7 @@ button:hover{
     align-items: flex-start;
 }
 #home span{
-    color: coral;
+    color: #b51f29;
 }
 #new .one img{
     width: 100%;
@@ -153,7 +153,7 @@ button:hover{
     opacity: 0.7;
 }
 .product .buy-btn{
-    background-color: coral;
+    background-color: #b51f29;
     opacity: 0;
     transition: 0.3s all;
 }
@@ -180,7 +180,7 @@ button:hover{
     color: #d8d8d8;
 }
 #banner button{
-    background-color: coral;
+    background-color: #b51f29;
 }
 footer{
     background-color: darkgray;
@@ -221,7 +221,7 @@ footer .copyright a{
 }
 footer .copyright a:hover{
     color: whitesmoke;
-    background-color: coral;
+    background-color: #b51f29;
 }
 .sproduct{
     margin: 60px 0;
@@ -248,7 +248,7 @@ footer .copyright a:hover{
     cursor: pointer;
 }
 .buy-btn{
-    background-color: coral;
+    background-color: #b51f29;
     opacity: 1;
     transition: 0.3s all;
 }
