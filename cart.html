@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <img src="img/hugo-boss-logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html" target="_blank" my-lang="shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="about">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="far fa-search"></i>
+                        <i class="far fa-shopping-bag"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button class="lang" onclick="translate2('ru')"><img src="rus.png" alt="ru" class="flag-icon"></button>
+                        <button class="lang" onclick="translate2('en')"><img src="en.png" alt="en" class="flag-icon"></button>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="img/hugo-boss-logo.png" alt="logo2">
+                <p class="pt-3" my-lang="plan">It is our vision to become the leading premium tech-driven fashion platform worldwide and in this context, we will revolutionize the way in which we interact with consumers. Our ambition is to double our business to EUR 4 billion in revenues by 2025 and to become one of the top-100 global brands.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2" my-lang="featured">Featured</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" my-lang="new">NEW ARRIVALS</a></li>
+                    <li><a href="#" my-lang="men">MEN</a></li>
+                    <li><a href="#" my-lang="women">WOMEN</a></li>
+                    <li><a href="#" my-lang="boys">BOYS</a></li>
+                    <li><a href="#" my-lang="girls">GIRLS</a></li>
+                    <li><a href="#" my-lang="shoes">SHOES</a></li>
+                    <li><a href="#" my-lang="sale">SALE</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2" my-lang="contact">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">ADDRES</h6>
+                    <p>123 STREET NAME, CITY, US</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">PHONE</h6>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">EMAIL</h6>
+                    <p>EMAIL@GMAIL.COM</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">INSTAGRAM</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/6.jpg" alt="INSTAGRAM">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="img/payment.png" alt="payment">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <p>BOSS eComerce 2021. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+        <script src="lang.js"></script>
+    <script>
+        let mainImg = document.getElementById('mainImg');
+        let smallImg = document.getElementsByClassName('small-img')
+
+        smallImg[0].onclick = function(){
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            mainImg.src = smallImg[03].src;
+        }
+    </script>
+</body>
+
+</html>
