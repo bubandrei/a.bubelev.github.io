@@ -31,33 +31,37 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#" my-lang="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html" target="_blank">Shop</a>
+                        <a class="nav-link" href="shop.html" target="_blank" my-lang="shop">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#" my-lang="blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#" my-lang="about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#" my-lang="contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <i class="far fa-search"></i>
                         <i class="far fa-shopping-bag"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="translate2('ru')">ru</button>
+                        <button onclick="translate2('en')">en</button>
                     </li>
             </div>
         </div>
     </nav>
     <section id="home">
         <div class="container">
-            <h5>NEW ARRAIVALS</h5>
-            <h1><span>Best Price</span> This Year</h1>
-            <p>Shoomatic offers your very comfortable time<br>on walking and exercises.</p>
-            <button>Shop Now</button>
+            <h5 my-lang="new">NEW ARRAIVALS</h5>
+            <h1 my-lang="contact"><span>Best Price</span> This Year</h1>
+            <p my-lang="contact">Shoomatic offers your very comfortable time<br>on walking and exercises.</p>
+            <button my-lang="contact">Shop Now</button>
         </div>
     </section>
 
@@ -309,6 +313,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
         integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
         crossorigin="anonymous"></script>
+        <script src="lang.js">
+
+        </script>
 </body>
 
 </html>
