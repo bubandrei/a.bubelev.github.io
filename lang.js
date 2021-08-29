@@ -20,7 +20,7 @@ const en = {
     mid:"MID SEASON'S SALE",
     summer:"Summer Collection",
     up:"UP TO 80% OFF",
-
+    buy:"Buy now",
 
 
 }
@@ -46,7 +46,7 @@ const ru = {
     mid:"РАСПРОДАЖА СЕЗОНА",
     summer:"Летняя коллекция",
     up:"СКИДКА ДО 80%",
-
+    buy:"Купить",
 
 
 }
