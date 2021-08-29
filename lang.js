@@ -22,6 +22,12 @@ const en = {
     up:"UP TO 80% OFF",
     buy:"Buy now",
     plan:"It is our vision to become the leading premium tech-driven fashion platform worldwide and in this context, we will revolutionize the way in which we interact with consumers. Our ambition is to double our business to EUR 4 billion in revenues by 2025 and to become one of the top-100 global brands.",
+    men:"MEN",
+    women:"WOMEN",
+    boys:"BOYS",
+    girls:"GIRLS",
+    shoes:"SHOES",
+    sale:"SALE",
 
 
 }
@@ -32,7 +38,7 @@ const ru = {
     blog: "Блог",
     about: "Распродажа",
     contact: "Котакты",
-    new: "Новые коллекции",
+    new: "НОВЫЕ КОЛЛЕКЦИИ",
     price: "Porsche x BOSS",
     offers: "Отвественный подход HUGO к моде",
     now: "Посмореть сейчас",
@@ -49,7 +55,12 @@ const ru = {
     up:"СКИДКА ДО 80%",
     buy:"Купить",
     plan:"Наше видение - стать ведущей технологической модной платформой премиум-класса во всем мире, и в этом контексте мы произведем революцию в способах взаимодействия с потребителями. Наша цель - удвоить наш бизнес до 4 миллиардов евро к 2025 году и войти в число 100 лучших мировых брендов.",
-
+    men:"МУЖЧИНЫ",
+    women:"ЖЕНЩИНЫ",
+    boys:"МАЛЬЧИКИ",
+    girls:"ДЕВОЧКИ",
+    shoes:"ОБУВЬ",
+    sale:"РАСПРОДАЖА",
 
 }
 let currentLanguage = ru;
