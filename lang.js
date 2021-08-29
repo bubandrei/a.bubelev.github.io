@@ -19,7 +19,7 @@ const en = {
     run:"Running Shoes",
     mid:"MID SEASON'S SALE",
     summer:"Summer Collection",
-    up="UP TO 80% OFF",
+    up:"UP TO 80% OFF",
 
 
 
@@ -45,7 +45,7 @@ const ru = {
     run:"Обувь для спорта",
     mid:"РАСПРОДАЖА СЕЗОНА",
     summer:"Летняя коллекция",
-    up="СКИДКА ДО 80%",
+    up:"СКИДКА ДО 80%",
 
 
 
