@@ -257,3 +257,7 @@ footer .copyright a:hover{
     color: black;
     padding: 0px;
 }
+.flag-icon{
+    width: 20px;
+    vertical-align: baseline;
+}
