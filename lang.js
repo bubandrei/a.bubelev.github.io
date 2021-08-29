@@ -17,8 +17,9 @@ const en = {
     dresses:"Dresses & Jumpsuits",
     clock:"Best Watches",
     run:"Running Shoes",
-
-
+    mid:"MID SEASON'S SALE",
+    summer:"Summer Collection",
+    up="UP TO 80% OFF",
 
 
 
@@ -42,7 +43,9 @@ const ru = {
     dresses:"Платья и комбинезоны",
     clock:"Часы",
     run:"Обувь для спорта",
-
+    mid:"РАСПРОДАЖА СЕЗОНА",
+    summer:"Летняя коллекция",
+    up="СКИДКА ДО 80%",
 
 
 
