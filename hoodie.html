@@ -30,23 +30,27 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" target="_blank">Home</a>
+                        <a class="nav-link" href="#" my-lang="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="shop.html" target="_blank" my-lang="shop">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#" my-lang="blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#" my-lang="about">Sale</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#" my-lang="contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <i class="far fa-search"></i>
                         <i class="far fa-shopping-bag"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button class="lang" onclick="translate2('ru')">ru</button>
+                        <button class="lang" onclick="translate2('en')">en</button>
                     </li>
             </div>
         </div>
@@ -73,20 +77,20 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-12">
-                <h6>Home / Mens Hoodie</h6>
+                <h6 my-lang="road">Home / Mens Hoodie</h6>
                 <h3 class="py-4">BOSS Athleisure Soody Mens Hoodie</h3>
                 <h2>$249.00</h2>
                 <select name="" id="">
-                    <option value="">Select Size</option>
+                    <option value="" my-lang="select">Select Size</option>
                     <option value="">S</option>
                     <option value="">M</option>
                     <option value="">L</option>
                     <option value="">XL</option>
                 </select>
                 <input type="number" value="1">
-                <button class="buy-btn">Add To Cart</button>
-                <h4 class="mt-5 mb-5">Product Details</h4>
-                <span>A loungewear top by BOSS Menswear, crafted in a cotton blend with a double-knit jacquard construction for luxurious softness. Featuring a hood with a contrast lining, this casual layer is designed in a color-block style with a bicolored logo print at the chest. Pair this loose-fitting loungewear top with other items from the range for coordinated comfort.
+                <button class="buy-btn" my-lang="cart">Add To Cart</button>
+                <h4 class="mt-5 mb-5" my-lang="details">Product Details</h4>
+                <span my-lang="detail">A loungewear top by BOSS Menswear, crafted in a cotton blend with a double-knit jacquard construction for luxurious softness. Featuring a hood with a contrast lining, this casual layer is designed in a color-block style with a bicolored logo print at the chest. Pair this loose-fitting loungewear top with other items from the range for coordinated comfort.
                     Regular fit
                     Neckline: Hooded</span>
             </div>
@@ -94,32 +98,32 @@
     </section>
     <section id="featured" class="mt-5 pb-5">
         <div class="container text-center mt-5 pb-5">
-            <h3>Related Products</h3>
+            <h3 my-lang="related">Related Products</h3>
         </div>
         <div class="row mx-auto container-fluid">
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="img/featured/1.jpg" alt="product">
-                <h5 class="p-name">BOSS ATHLEISURE Polo Shirt</h5>
+                <h5 class="p-name">BOSS ATHLEISURE Polo T-Shirt</h5>
                 <h4 class="p-price">$135.00</h4>
-                <button class="buy-btn">Buy now</button>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="img/featured/2.jpg" alt="product">
                 <h5 class="p-name">BOSS V Marson Pixel Artwork Gilet</h5>
                 <h4 class="p-price">$389.00</h4>
-                <button class="buy-btn">Buy now</button>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="img/featured/3.jpg" alt="product">
                 <h5 class="p-name">BOSS Tsummery Crew Neck Printed T-Shirt</h5>
                 <h4 class="p-price">$79.00</h4>
-                <button class="buy-btn">Buy now</button>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="img/featured/4.jpg" alt="product">
                 <h5 class="p-name">BOSS Magneton Slim Fit Mens Shirt</h5>
                 <h4 class="p-price">$139.00</h4>
-                <button class="buy-btn">Buy now</button>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
             </div>
         </div>
     </section>
@@ -131,22 +135,22 @@
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="img/hugo-boss-logo.png" alt="logo2">
-                <p class="pt-3">It is our vision to become the leading premium tech-driven fashion platform worldwide and in this context, we will revolutionize the way in which we interact with consumers. Our ambition is to double our business to EUR 4 billion in revenues by 2025 and to become one of the top-100 global brands.</p>
+                <p class="pt-3" my-lang="plan">It is our vision to become the leading premium tech-driven fashion platform worldwide and in this context, we will revolutionize the way in which we interact with consumers. Our ambition is to double our business to EUR 4 billion in revenues by 2025 and to become one of the top-100 global brands.</p>
             </div>
             <div class="footer-one col-lg-3 col-md-6 col-12">
-                <h5 class="pb-2">Featured</h5>
+                <h5 class="pb-2" my-lang="featured">Featured</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">NEW ARRIVALS</a></li>
-                    <li><a href="#">MEN</a></li>
-                    <li><a href="#">WOMEN</a></li>
-                    <li><a href="#">BOYS</a></li>
-                    <li><a href="#">GIRLS</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">SALE</a></li>
+                    <li><a href="#" my-lang="new">NEW ARRIVALS</a></li>
+                    <li><a href="#" my-lang="men">MEN</a></li>
+                    <li><a href="#" my-lang="women">WOMEN</a></li>
+                    <li><a href="#" my-lang="boys">BOYS</a></li>
+                    <li><a href="#" my-lang="girls">GIRLS</a></li>
+                    <li><a href="#" my-lang="shoes">SHOES</a></li>
+                    <li><a href="#" my-lang="sale">SALE</a></li>
                 </ul>
             </div>
             <div class="footer-one col-lg-3 col-md-6 col-12">
-                <h5 class="pb-2">Contact Us</h5>
+                <h5 class="pb-2" my-lang="contact">Contact Us</h5>
                 <div>
                     <h6 class="text-uppercase">ADDRES</h6>
                     <p>123 STREET NAME, CITY, US</p>
@@ -178,7 +182,7 @@
                     <img src="img/payment.png" alt="payment">
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <p>corso eComerce 2021. All Rights Reserved</p>
+                    <p>BOSS eComerce 2021. All Rights Reserved</p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -198,6 +202,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
         integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
         crossorigin="anonymous"></script>
+        <script src="lang.js"></script>
     <script>
         let mainImg = document.getElementById('mainImg');
         let smallImg = document.getElementsByClassName('small-img')
