@@ -12,8 +12,12 @@ const en = {
     sneakers:"Extreme Rare Sneakers",
     outfit:"Awesome Blank Outfit",
     sportwear:"Sportwear",
+    featured: "Our Featured",
+    check:"Here you can check out our new products BOSS",
+    dresses:"Dresses & Jumpsuits",
+    clock:"Best Watches",
+    run:"Running Shoes",
 
-    
 
 
 
@@ -33,6 +37,14 @@ const ru = {
     sneakers:"Экологичные модели",
     outfit:"По вашим правилам",
     sportwear:"Современный стиль",
+    featured: "Рекомендации",
+    check:"Здесь вы можете познакомиться с нашими новинками BOSS",
+    dresses:"Платья и комбинезоны",
+    clock:"Часы",
+    run:"Обувь для спорта",
+
+
+
 
 }
 let currentLanguage = ru;
