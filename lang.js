@@ -28,8 +28,8 @@ const en = {
     girls:"GIRLS",
     shoes:"SHOES",
     sale:"SALE",
-
-
+    previous:"Previous",
+    next:"Next",
 }
 const ru = {
     
@@ -37,7 +37,7 @@ const ru = {
     shop: "Товары",
     blog: "Блог",
     about: "Распродажа",
-    contact: "Котакты",
+    contact: "Контакты",
     new: "НОВЫЕ КОЛЛЕКЦИИ",
     price: "Porsche x BOSS",
     offers: "Отвественный подход HUGO к моде",
@@ -61,6 +61,8 @@ const ru = {
     girls:"ДЕВОЧКИ",
     shoes:"ОБУВЬ",
     sale:"РАСПРОДАЖА",
+    previous:"Предыдущая",
+    next:"Следующая",
 
 }
 let currentLanguage = ru;
