@@ -3,8 +3,20 @@ const en = {
     home: "Home",
     shop: "Shop",
     blog: "Blog",
-    about: "About",
-    contact: "Contact Us"
+    about: "Sale",
+    contact: "Contact Us",
+    new: "OVER 200 NEW ARRAIVALS",
+    price: "Porsche x BOSS",
+    offers: "Our more beautifull styles",
+    now: "Shop now",
+    sneakers:"Extreme Rare Sneakers",
+    outfit:"Awesome Blank Outfit",
+    sportwear:"Sportwear",
+
+    
+
+
+
 
 }
 const ru = {
@@ -12,9 +24,16 @@ const ru = {
     home: "Главная",
     shop: "Товары",
     blog: "Блог",
-    about: "О компании",
+    about: "Распродажа",
     contact: "Котакты",
-    new: ""
+    new: "Новые коллекции",
+    price: "Porsche x BOSS",
+    offers: "Отвественный подход HUGO к моде",
+    now: "Посмореть сейчас",
+    sneakers:"Экологичные модели",
+    outfit:"По вашим правилам",
+    sportwear:"Современный стиль",
+
 }
 let currentLanguage = ru;
 
