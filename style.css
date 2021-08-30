@@ -224,7 +224,7 @@ footer .copyright a:hover{
     background-color: #b51f29;
 }
 .sproduct{
-    margin: 60px 0;
+    margin: 60px auto;
     padding-top: 60px;
 }
 .sproduct select{
@@ -268,4 +268,7 @@ footer .copyright a:hover{
     width: 20px;
     vertical-align: baseline;
     background-color: white;
+}
+.hoodieTitle{
+    justify-content: space-between;
 }
