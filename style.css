@@ -281,3 +281,10 @@ footer .copyright a:hover{
 .carouselhidden{
     overflow: hidden;
 }
+.imgcarousel{
+    text-align: center;
+}
+.styleArrow{
+    background-color: gray;
+    opacity: 0.6;
+}
