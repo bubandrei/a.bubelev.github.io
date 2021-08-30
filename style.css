@@ -272,3 +272,12 @@ footer .copyright a:hover{
 .hoodieTitle{
     justify-content: space-between;
 }
+.img-container{
+    transform: translateX(0);
+    transition: transform ease-in-out 0.7s;
+    flex-wrap: nowrap;
+    
+}
+.carouselhidden{
+    overflow: hidden;
+}
