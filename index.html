@@ -18,6 +18,19 @@
 
 <body>
 
+    <div id="bg_popup">
+        <div id="popup">
+            <!-- <img class="modalPop" src="img/BOSS_Porsche.webp" alt="BOSS Porsche"> -->
+      <!-- <h1>Заголовок</h1>
+      <p>Пример модального окна, всплывающего при загрузке сайта.</p> -->
+      <a class="close" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;">X</a>
+      </div>
+      </div>
+
+
+
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
             <img src="img/hugo-boss-logo.png" alt="logo">
@@ -347,6 +360,13 @@
         crossorigin="anonymous"></script>
     <script src="lang.js"></script>
     <script src="carousel.js"></script>
+
+    <script type="text/javascript">
+        var delay_popup = 1000;
+        setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
+    </script>  
+
+
 </body>
 
 </html>
