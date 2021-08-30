@@ -289,3 +289,36 @@ footer .copyright a:hover{
     background-color: gray;
     opacity: 0.6;
 }
+
+
+
+#bg_popup{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }  
+    #popup {
+    background: #fff;
+    width: 960px;
+    height: 660px;
+    margin: 8% auto;
+    position: relative;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 15px;
+    background-image: url(img/BOSS_Porsche_014.webp);
+    }  
+    .close{
+    position:absolute;
+    right:5px;
+    width:25px;
+    height:25px;
+    line-height:28px;
+    }
+    .close:hover {
+    background-color:#f30;
+    }
