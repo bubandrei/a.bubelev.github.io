@@ -341,6 +341,9 @@ footer .copyright a:hover{
 .showcollection:hover {
     background-color: unset;
 }
+.showcollection:focus{
+    outline: unset;
+}
 .showcollectionarrow{
     font-weight: 400;
     opacity: 0;
