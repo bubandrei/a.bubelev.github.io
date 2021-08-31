@@ -313,12 +313,41 @@ footer .copyright a:hover{
     background-image: url(img/BOSS_Porsche_014.webp);
     }  
     .close{
-    position:absolute;
-    right:5px;
-    width:25px;
-    height:25px;
-    line-height:28px;
+        position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 100;
     }
-    .close:hover {
-    background-color:#f30;
+    .perfomance{
+        position: relative;
+        top: 40%;
+        left: 10%;
+        color: whitesmoke;
+        font-size: 40px;
+        font-weight: 400;
     }
+    .showcollection{
+        position: relative;
+        top: 42%;
+        left: 7%;
+        background-color: unset;
+        font-weight: 400;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+    
+.showcollection:hover {
+    background-color: unset;
+}
+.showcollectionarrow{
+    font-weight: 400;
+    opacity: 0;
+}
+.showcollection:hover  .showcollectionarrow{
+    opacity: 1;
+    transform: translateX(10px);
+    transition: 0.3s ease-in;
+}
+
