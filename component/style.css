@@ -79,8 +79,16 @@ button:hover{
     text-align: center;
 }
 .styleArrow{
-    background-color: gray;
-    opacity: 0.6;
+    background-color: darkgray;
+    border: 1px solid #dee2e6;
 }
-
+.styleArrow:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+.styleArrow:focus{
+   outline: none;
+}
 
