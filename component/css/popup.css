@@ -8,7 +8,7 @@
     bottom: 0;
     left: 0;
     }  
-    #popup {
+#popup {
     background-color: black;
     width: 960px;
     height: 650px;
@@ -18,29 +18,30 @@
     border-radius: 15px;
     background-image: url(../../assets/img/popup/BOSS_Porsche_014.webp);
     }  
-    .close{
-        position: absolute;
-        right: 15px;
-        font-size: 35px;
-        color: white;
-        font-weight: 100;
+.close{
+    position: absolute;
+    right: 6px;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    top: 4px;
     }
-    .perfomance{
-        position: relative;
-        top: 40%;
-        left: 10%;
-        color: whitesmoke;
-        font-size: 40px;
-        font-weight: 400;
+.perfomance{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 400;
     }
-    .showcollection{
-        position: relative;
-        top: 42%;
-        left: 7%;
-        background-color: unset;
-        font-weight: 400;
-        font-size: 20px;
-        color: whitesmoke;
+.showcollection{
+    position: relative;
+    top: 42%;
+    left: 7%;
+    background-color: unset;
+    font-weight: 400;
+    font-size: 20px;
+    color: whitesmoke;
     }
 .showcollection:hover {
     background-color: unset;
