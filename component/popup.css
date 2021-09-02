@@ -9,11 +9,10 @@
     left: 0;
     }  
     #popup {
-    /* background: #fff; */
     background-color: black;
     width: 960px;
-    height: 660px;
-    margin: 8% auto;
+    height: 650px;
+    margin: 6% auto;
     position: relative;
     box-shadow: 0px 0px 20px black;
     border-radius: 15px;
@@ -21,11 +20,10 @@
     }  
     .close{
         position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 15px;
-    color: whitesmoke;
-    font-weight: 100;
+        right: 15px;
+        font-size: 35px;
+        color: white;
+        font-weight: 100;
     }
     .perfomance{
         position: relative;
