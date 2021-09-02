@@ -16,7 +16,7 @@
     position: relative;
     box-shadow: 0px 0px 20px black;
     border-radius: 15px;
-    background-image: url(assets/img/popup/BOSS_Porsche_014.webp);
+    background-image: url(assets\img\popup\BOSS_Porsche_014.webp);
     }  
     .close{
         position: absolute;
