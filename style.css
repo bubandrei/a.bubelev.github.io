@@ -62,24 +62,7 @@ button:hover{
     opacity: 1;
     transition: 0.3s all;
 }
-.lang{
-    background-color: white;
-    color: black;
-    padding: 0px;
-}
-.lang:focus{
-    outline: none;
-    background-color: white;
-}
-.lang:hover{
-    background-color: white;
-}
-.flag-icon{
-    width: 20px;
-    vertical-align: baseline;
-    background-color: white;
-    margin-left: 10px;
-}
+
 .hoodieTitle{
     justify-content: space-between;
 }
