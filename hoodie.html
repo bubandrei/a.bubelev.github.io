@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="component/css/footer.css">
     <link rel="stylesheet" href="component/css/adaptive.css">
     <link rel="stylesheet" href="component/css/language.css">
+    <link rel="stylesheet" href="component/css/cart.css">
 
 </head>
 
@@ -31,7 +32,7 @@
                 <span><i id="bar" class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav navbar-center ml-auto">
 
                     <li class="nav-item">
                         <a class="nav-link" href="index.html" my-lang="home">Home</a>
@@ -49,8 +50,8 @@
                         <a class="nav-link" href="#" my-lang="contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <i class="far fa-search"></i>
-                        <i class="far fa-shopping-bag"></i>
+                        <input type="text"><i class="far fa-search"></i>
+                        <button onclick="opened()" class="cart-open"><i class="far fa-shopping-bag"></i></button>
                     </li>
                     <li class="nav-item">
                         <button class="lang" onclick="translate2('ru')"><img src="assets/img/icons-lang/rus.png"
@@ -169,6 +170,15 @@
     </section>
 
 
+    <div class="general">
+        <div id="window" class="wrapper"><button onclick="closed()" class="cart-close">closed</button></div>
+
+        <!-- <div><button onclick="opened()" class="arroy">opened</button></div> -->
+        
+        <!-- <div><button onclick="closed()" class="arroy">closed</button></div> -->
+    </div>
+
+
 
 
     <footer class="mt-5 py-5">
@@ -248,6 +258,7 @@
     <script src="component/js/lang.js"></script>
     <script src="component/js/hoodie.js"> </script>
     <script src="component/js/carousel.js"></script>
+    <script src="component/js/cart.js"></script>
 </body>
 
 </html>

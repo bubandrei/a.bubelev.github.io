@@ -1,0 +1,37 @@
+.wrapper{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 90vh;
+    background-color: coral;
+    position: absolute;
+    font-size: 50 px;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+.cart-open{
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cart-open:hover{
+    background: none;
+}
+.cart-open:focus{
+    outline: none;
+}
+.cart-close{
+    position: relative;
+    right: -50%;
+    top: 20%;
+}
+.opened{
+    transform: translateX(0);
+}
+.general{
+    background-color: gray;
+    opacity: 0.5;
+}
