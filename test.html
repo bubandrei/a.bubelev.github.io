@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper{
+            width: 250px;
+            height: 90vh;
+            background-color: coral;
+            position: absolute;
+            font-size: 50 px;
+            transform: translateX(-100%);
+            transition: 0.5s ease;
+        }
+        .arroy{
+            position: relative;
+            right: -50%;
+            top: 20%;
+        }
+        .opened{
+            transform: translateX(0);
+        }
+        .general{
+            background-color: gray;
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+        <div class="general">
+            <div id="window" class="wrapper">Bootstrap Sidebar</div>
+    
+            <div><button onclick="opened()" class="arroy">opened</button></div>
+            
+            <div><button onclick="closed()" class="arroy">closed</button></div>
+        </div>
+    
+        <script>
+            let dilog = document.getElementById('window');
+            function opened(){
+                dilog.classList.add('opened');
+                document.body.classList.add('general');
+            }
+    
+            function closed(){
+                dilog.classList.remove('opened');
+                document.body.classList.remove('general');
+            }
+    
+    
+    
+        </script>
+    </body>
+</html>
