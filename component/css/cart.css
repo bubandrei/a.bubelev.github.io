@@ -1,13 +1,15 @@
 .wrapper{
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 90vh;
+    top: 114px;
+    width: 70vw;
+    min-height: 30vh;
+    max-height: 80vh;
     background-color: coral;
     position: absolute;
     font-size: 50 px;
     transform: translateX(-100%);
     transition: 0.5s ease;
+    overflow: scroll;
+    
 }
 .cart-open{
     padding: 0;
@@ -18,18 +20,29 @@
   cursor: pointer;
 }
 .cart-open:hover{
-    background: none;
+    background: white;
 }
 .cart-open:focus{
     outline: none;
 }
 .cart-close{
-    position: relative;
-    right: -50%;
-    top: 20%;
+    position: absolute;
+    right: 1%;
+    top: -1%;
+    background: none;
+    font-size: xx-large;
+    padding: 0px;
+}
+.cart-close:hover{
+    background-color: unset;
+    color: black;
+}
+.cart-close:focus{
+    outline: unset;
 }
 .opened{
     transform: translateX(0);
+    position: fixed;
 }
 .general{
     background-color: gray;
