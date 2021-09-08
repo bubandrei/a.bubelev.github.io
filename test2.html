@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /*grid-template-rows: 70px;*/
+        }
+
+        .grid:not(.header) :nth-child(7n  - 1) {
+            color: #0ca948;;
+        }
+
+        .saturday {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+<button onclick="goToPrevious()"> <</button>
+<button onclick="goToNext()"> ></button>
+<div id="monthContainer"></div>
+
+<div class="calendar">
+    <div class="header grid">
+        <div>Пн</div>
+        <div>Вт</div>
+        <div>Ср</div>
+        <div>Чт</div>
+        <div>Пт</div>
+        <div>Сб</div>
+        <div>Вс</div>
+    </div>
+    <div id="calendar" class="grid">
+
+    </div>
+    <select name="" id="monthSelect" onchange="onChangeMonth()">
+        <option value='0'>Январь</option>
+        <option value='1'>Февраль</option>
+        <option value='8' selected>Сентябрь</option>
+    </select>
+</div>
+
+<script>
+    const months = ['Январь', 'Февраль', 'Март', 'Аапрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+    const calendar = document.getElementById('calendar');
+    const monthContainer = document.getElementById('monthContainer');
+    const monthSelect = document.getElementById('monthSelect');
+    let date = new Date();
+    generateCalendar(date);
+
+    // function goToNext() {
+    //     date.setMonth(date.getMonth() + 1);
+    //     generateCalendar(date);
+    // }
+
+    // function goToPrevious() {
+    //     date.setMonth(date.getMonth() - 1);
+    //     generateCalendar(date);
+    // }
+    function generateCalendar(date) {
+        const fullYear = date.getFullYear(); //выводит целый год
+        const month = date.getMonth();//выводит месяц
+        const daysInMonth = getDaysInMonth(fullYear, month);//кол-во дней в месяце
+        let html = '';
+        html += generateEmptySpace(fullYear, month)
+        const daysBefore = new Date(fullYear, month).getDay();//с какого дня недели(порядковый номер) начинается месяц
+        for (let i = 0; i <= daysInMonth; i++) {
+            let className = '';
+            if ((i + daysBefore) % 7 === 0) {
+                className = 'saturday'
+            }
+            html += `<div class="${className}">${i}</div>`;
+        }
+        calendar.innerHTML = html;
+        generateMonth(date);
+    }
+ 
+    function generateEmptySpace(year, month) {
+        const date = new Date(year, month);
+        const dateIndex = date.getDay();//день недели, порядковый номер
+        let html = '';
+        for (let i = 1; i < dateIndex; i++) {
+            html += `<div></div>`;
+        }
+        return html;
+    }
+
+    function getDaysInMonth(year, month) {
+        const firstDay = new Date(year, month);
+        const firstDayInNextMonth = new Date(year, month + 1);
+        const diff = firstDayInNextMonth - firstDay;
+        return diff / (1000 * 60 * 60 * 24);
+    }
+
+    // function generateMonth(date) {
+    //     const month = months[date.getMonth()];
+    //     monthContainer.innerHTML = `${month} ${date.getFullYear()}`
+    // }
+
+    // function onChangeMonth(event) {
+    //     const monthIndex = monthSelect.value;
+    //     date.setMonth(monthIndex);
+    //     generateCalendar(date);
+    // }
+</script>
+</body>
+</html>

@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        .wrapper{
-            width: 250px;
-            height: 90vh;
-            background-color: coral;
-            position: absolute;
-            font-size: 50 px;
-            transform: translateX(-100%);
-            transition: 0.5s ease;
-        }
-        .arroy{
-            position: relative;
-            right: -50%;
-            top: 20%;
-        }
-        .opened{
-            transform: translateX(0);
-        }
-        .general{
-            background-color: gray;
-            opacity: 0.5;
-        }
-
-    </style>
+    <title>Title</title>
 </head>
-
 <body>
-   
-        <div class="general">
-            <div id="window" class="wrapper">Bootstrap Sidebar</div>
-    
-            <div><button onclick="opened()" class="arroy">opened</button></div>
-            
-            <div><button onclick="closed()" class="arroy">closed</button></div>
-        </div>
-    
-        <script>
-            let dilog = document.getElementById('window');
-            function opened(){
-                dilog.classList.add('opened');
-                document.body.classList.add('general');
-            }
-    
-            function closed(){
-                dilog.classList.remove('opened');
-                document.body.classList.remove('general');
-            }
-    
-    
-    
-        </script>
-    </body>
+<div id="product">
+    <br>
+    <br>
+    <br>
+</div>
+<p>Корзина:</p>
+<div id="bucket">
+
+</div>
+
+</body>
+<script>
+    const bucketContainer = document.getElementById('bucket');
+    const BUCKET_KEY = 'bucket';
+    const bucketProducts = JSON.parse(localStorage.getItem(BUCKET_KEY)) || [];
+    generateBucket();
+    const products = [{
+        title: 'Audi Q3',
+        price: 20000,
+    }, {
+        title: 'Audi Q5',
+        price: 30000,
+    },
+        {
+            title: 'Audi Q7',
+            price: 40000,
+        },
+        {
+            title: 'Audi Q8',
+            price: 50000,
+        }]
+
+    let html = ''
+    products.map((item, index) => {
+        html += `<div>Название${item.title}<br/>
+                    Цена: ${item.price}$<br/>
+                    <button onclick="addCar(${index})">Добавить в корзину</button> </div>`
+    })
+
+    function generateBucket() {
+        let bucketHtml = ''
+        let total = 0;
+        bucketProducts.forEach((item, index) => {
+            total += item.price * item.count;
+            bucketHtml += `<div>Название${item.title}
+                    Цена: ${item.price}
+                    <button onclick="add(${index}, -1)">-</button>
+                    Количество: ${item.count}
+                    <button onclick="add(${index}, 1)">+</button>
+                    Всего: ${item.price * item.count}
+                    <button onclick="deleteFromBucket(${index})">Удалить из корзины</button> </div>`
+        })
+        if (bucketHtml === '') {
+            bucketHtml = 'Здесь будут ваши продукты'
+        } else {
+            bucketHtml += `<div>Всего: ${total}</div>`
+        }
+        bucketContainer.innerHTML = bucketHtml;
+    }
+
+
+    function add(carIndex, num) {
+        const car = bucketProducts[carIndex];
+        car.count = car.count + num;
+        if (car.count === 0) {
+            bucketProducts.splice(carIndex, 1)
+        }
+        localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
+        generateBucket();
+    }
+
+    function deleteFromBucket(bucketItemIndex) {
+        bucketProducts.splice(bucketItemIndex, 1);
+        localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
+        generateBucket();
+    }
+
+    function addCar(carIndex) {
+        const car = products[carIndex];
+        const foundCar = bucketProducts.find(item => item.title === car.title);
+        if (foundCar) {
+            foundCar.count++;
+        } else {
+            car.count = 1
+            bucketProducts.push(car);
+        }
+        generateBucket();
+        localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
+    }
+
+    document.body.firstElementChild.innerHTML = html;
+</script>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /*grid-template-rows: 70px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calendar">
+        <div id="calendar" class="grid"></div>
+
+    </div>
+
+
+
+
+    <script>
+        let date = new Date();
+  const fullYear = date.getFullYear(); //выводит целый год
+        const month = date.getMonth();//выводит месяц
+       
+      
+  var days_in_april = 32 - new Date(fullYear, month, 32).getDate();
+
+//   console.log(days_in_april)
+  let html = '';
+  for (let i = 1; i <= days_in_april; i++) {
+            
+           
+            html += `<div>${i}</div>`;
+        }
+        calendar.innerHTML = html;
+
+
+    </script>
+
+</body>
+
+</html>
