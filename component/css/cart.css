@@ -3,7 +3,7 @@
     width: 70vw;
     min-height: 30vh;
     max-height: 80vh;
-    background-color: coral;
+    background-color: white;
     position: absolute;
     font-size: 50 px;
     transform: translateX(-100%);
@@ -46,5 +46,28 @@
 }
 .general{
     background-color: gray;
-    opacity: 0.5;
+    /* opacity: 0.5; */
+}
+.cartCount{
+    color: black;
+    background: white;
+}
+.cartCount:hover{
+    color: green;
+    background: white;
+}
+.cartCount:focus{
+    color: green;
+    border: unset;
+}
+.sizeImg{
+    width: 200px;
+}
+.containerCart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titleUnit{
+    display: flex;
 }
