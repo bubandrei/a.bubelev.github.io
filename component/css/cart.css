@@ -48,17 +48,23 @@
     background-color: gray;
     /* opacity: 0.5; */
 }
+.orderOverview{
+    padding: 10px 200px;
+    font-weight: 900;
+}
 .cartCount{
     color: black;
     background: white;
+    padding: 0px 35px;
+    font-size: 15px;
 }
 .cartCount:hover{
-    color: green;
+    color: red;
     background: white;
 }
 .cartCount:focus{
-    color: green;
-    border: unset;
+    color: red;
+    outline: none;
 }
 .sizeImg{
     width: 200px;
@@ -66,8 +72,28 @@
 .containerCart{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    
 }
 .titleUnit{
     display: flex;
+    flex-direction: column;
+}
+.titleContent{
+    border-bottom: 1px solid;
+}
+.quantity{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.totalPrice{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15px;
+    border-left: 1px solid;
+    font-weight: 900;
+}
+.unitePrice{
+    font-weight: 900;
 }

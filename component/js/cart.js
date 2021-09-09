@@ -30,24 +30,30 @@ function closed(){
         bucketProducts.forEach((item, index) => {
             total += item.price * item.count;
             bucketHtml += `<div class="containerCart">  
-                           <img class="sizeImg" src="${item.img}"
+                           <img class="sizeImg" src="${item.img}">
                             <div class="titleUnit">
-                            <div>${item.title}
-                            Unite Price: ${item.price}</div>
-                            Quantity:
+                            <div class="titleContent">${item.title}</div>
+                            <div class="unitePrice">Unite Price: ${item.price}$</div>
+                            </div>
+                            <div class="quantity">
+                            <div>Quantity:</div>
                             <span><button class="cartCount" onclick="add(${index}, -1)">-</button>
                              ${item.count}
-                            <button class="cartCount" onclick="add(${index}, 1)">+</button></span>
-                            Total Price: ${item.price * item.count}</div>
-                            <button onclick="deleteFromBucket(${index})">Delete</button> </div>
-                            </div>`
+                            <button class="cartCount" onclick="add(${index}, 1)">+</button></span></div>
+                            <div class="totalPrice">
+                            <div>Total Price:</div>
+                            <div>${item.price * item.count}$</div>
+                            </div>
+                            </div>
+                            <button onclick="deleteFromBucket(${index})">Delete</button>`
+                            
         })
         if (bucketHtml === '') {
             bucketHtml = 'Your shopping bag is empty'
         } 
-        // else {
-        //     bucketHtml += `<div>Всего: ${total}</div>`
-        // }
+        else {
+            bucketHtml += `<div>Всего: ${total}</div>`
+        }
         bucketContainer.innerHTML = bucketHtml;
     }
 
