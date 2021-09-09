@@ -41,11 +41,11 @@ function closed(){
                              ${item.count}
                             <button class="cartCount" onclick="add(${index}, 1)">+</button></span></div>
                             <div class="totalPrice">
-                            <div>Total Price:</div>
+                            <div>Price:</div>
                             <div>${item.price * item.count}$</div>
                             </div>
                             </div>
-                            <button onclick="deleteFromBucket(${index})">Delete</button>`
+                            <div class="borderLine"><button onclick="deleteFromBucket(${index})">Delete</button></div>`
                             
         })
         if (bucketHtml === '') {

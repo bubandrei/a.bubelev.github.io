@@ -97,3 +97,6 @@
 .unitePrice{
     font-weight: 900;
 }
+.borderLine{
+    border-top: 1px solid;
+}
