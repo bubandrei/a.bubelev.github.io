@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="component/css/banner.css">
     <link rel="stylesheet" href="component/css/adaptive.css">
     <link rel="stylesheet" href="component/css/language.css">
+    <link rel="stylesheet" href="component/css/cart.css">
 </head>
 <body>
     <div id="bg_popup">
@@ -56,7 +57,7 @@
                     </li>
                     <li class="nav-item">
                         <input type="text"><i class="far fa-search"></i>
-                        <i class="far fa-shopping-bag"></i>
+                        <button onclick="opened()" class="cart-open"><i class="far fa-shopping-bag"></i></button>
                     </li>
                     <li class="nav-item pad-top">
                         <button class="lang" onclick="translate2('ru')"><img src="assets/img/icons-lang/rus.png" alt="ru"
@@ -284,6 +285,17 @@
         </div>
     </section>
 
+    <div class="general">
+        <div>
+            <div id="window" class="wrapper">
+                <button onclick="closed()" class="cart-close"><span></span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></button>
+                <div class="orderOverview">ORDER OVERVIEW</div>
+                <div id="product"> </div>
+                <div id="bucket"></div>
+            </div>
+        </div>
+
+
     <footer class="mt-5 py-5">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
@@ -355,7 +367,8 @@
         crossorigin="anonymous"></script>
     <script src="component/js/lang.js"></script>
     <script src="component/js/carousel.js"></script>
-    <script src="component/js/popup.js"></script>  
+    <script src="component/js/popup.js"></script>
+    <script src="component/js/cart.js"></script>  
 
 </body>
 
