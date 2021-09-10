@@ -1,6 +1,6 @@
 .wrapper{
     top: 114px;
-    width: 70vw;
+    width: 700px;
     min-height: 30vh;
     max-height: 80vh;
     background-color: white;
@@ -10,6 +10,10 @@
     transition: 0.5s ease;
     /* overflow: scroll; */
     
+}
+#bucket{
+    text-align: center;
+    margin-top: 50px;
 }
 .cart-open{
     padding: 0;
@@ -138,4 +142,7 @@
     width: 160px;
     padding: 2px 10px;
     font-size: 20px;
+}
+.countTitle{
+    font-weight: 900;
 }

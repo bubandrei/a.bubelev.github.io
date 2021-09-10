@@ -38,7 +38,7 @@ function closed(){
                             <div class="quantity">
                             <div>Quantity:</div>
                             <span><button class="cartCount" onclick="add(${index}, -1)">-</button>
-                             ${item.count}
+                             <span class="countTitle">${item.count}</span>
                             <button class="cartCount" onclick="add(${index}, 1)">+</button></span></div>
                             <div class="totalPrice">
                             <div>Price:</div>
