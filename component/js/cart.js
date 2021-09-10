@@ -19,9 +19,15 @@ function closed(){
     generateBucket();
     const products = [{
         img: src="assets/img/shop/1.jpg",
-        title: 'BOSS Athleisure Soody Mens Hoodie',
+        title: 'BOSS Athleisure Soody Men Hoodie',
         price: 249,
-    }]
+    },
+    {
+        img: src="assets/img/shop/2.jpg",
+        title: 'BOSS Titanium Run K Mens Trainers',
+        price: 199,
+    }
+]
 
     let html = ''
     function generateBucket() {
@@ -61,11 +67,11 @@ function closed(){
     }
 
 
-    function add(carIndex, num) {
-        const clothes = bucketProducts[carIndex];
+    function add(clothesIndex, num) {
+        const clothes = bucketProducts[clothesIndex];
         clothes.count = clothes.count + num;
         if (clothes.count === 0) {
-            bucketProducts.splice(carIndex, 1)
+            bucketProducts.splice(clothesIndex, 1)
         }
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
         generateBucket();
@@ -77,15 +83,15 @@ function closed(){
         generateBucket();
     }
 
-    function addCar(carIndex) {
+    function addClothes(clothesIndex) {
         const count = parseInt(counterSelect.value) || 1;
-        const car = products[carIndex];
-        const foundCar = bucketProducts.find(item => item.title === car.title);
-        if (foundCar) {
-            foundCar.count+=count;
+        const wear = products[clothesIndex];
+        const foundClothes = bucketProducts.find(item => item.title === wear.title);
+        if (foundClothes) {
+            foundClothes.count+=count;
         } else {
-            car.count = count
-            bucketProducts.push(car);
+            wear.count = count
+            bucketProducts.push(wear);
         }
         generateBucket();
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
