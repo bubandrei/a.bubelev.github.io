@@ -31,9 +31,13 @@
 #banner h1{
     color: #d8d8d8;
 }
-#banner button{
+.btnShop{
     background-color: #b51f29;
 }
+.btnShop:hover{
+    background-color: gray;
+}
+
 #new .one img{
     width: 100%;
     height: 100%;
