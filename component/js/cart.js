@@ -62,9 +62,9 @@ function closed(){
 
 
     function add(carIndex, num) {
-        const car = bucketProducts[carIndex];
-        car.count = car.count + num;
-        if (car.count === 0) {
+        const clothes = bucketProducts[carIndex];
+        clothes.count = clothes.count + num;
+        if (clothes.count === 0) {
             bucketProducts.splice(carIndex, 1)
         }
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
