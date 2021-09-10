@@ -1,15 +1,15 @@
 .wrapper{
     top: 114px;
     width: 700px;
-    min-height: 30vh;
-    max-height: 80vh;
+    min-height: 40vh;
+    max-height: 60vh;
     background-color: white;
     position: absolute;
     font-size: 50 px;
     transform: translateX(-100%);
     transition: 0.5s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    /* overflow: scroll; */
+    overflow: auto;
     
 }
 #bucket{
@@ -47,10 +47,11 @@
 .opened{
     transform: translateX(0);
     position: fixed;
+    z-index: 9999;
 }
 .general{
     background-color: gray;
-    /* opacity: 0.5; */
+    overflow: hidden;
 }
 .orderOverview{
     padding: 10px 200px;
