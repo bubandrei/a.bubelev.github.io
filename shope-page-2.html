@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOSS Shop</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="component/css/style.css">
+    <link rel="stylesheet" href="component/css/navbar.css">
+    <link rel="stylesheet" href="component/css/footer.css">
+    <link rel="stylesheet" href="component/css/pagination.css">
+    <link rel="stylesheet" href="component/css/adaptive.css">
+    <link rel="stylesheet" href="component/css/language.css">
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <img src="assets/img/logo/hugo-boss-logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-center ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" my-lang="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html" my-lang="shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="about">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text"><i class="far fa-search"></i>
+                        <i class="far fa-shopping-bag"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button class="lang" onclick="translate2('ru')"><img src="assets/img/icons-lang/rus.png"
+                                alt="ru" class="flag-icon"></button>
+                        <button class="lang" onclick="translate2('en')"><img src="assets/img/icons-lang/En.png" alt="en"
+                                class="flag-icon"></button>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="featured" class="mt-5 py-2">
+        <div class="container mt-5 py-5">
+            <h2 my-lang="featured">Our Featured</h2>
+            <div my-lang="check">Here you can check out our new products BOSS</div>
+        </div>
+        <div class="row mx-auto container">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img onclick="window.location.href='hoodie.html';" class="mb-3 img-fluid" src="assets/img/shop/1.jpg"
+                    alt="product">
+                <h5 class="p-name">BOSS Athleisure Soody Mens Hoodie</h5>
+                <h4 class="p-price">$249.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/2.jpg" alt="product">
+                <h5 class="p-name">BOSS Titanium Runn Knst Mens Trainers</h5>
+                <h4 class="p-price">$199.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/3.jpg" alt="product">
+                <h5 class="p-name">BOSS Crai <br> Womens Blouse</h5>
+                <h4 class="p-price">$229.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/4.jpg" alt="product">
+                <h5 class="p-name">BOSS Mirage Tenn Bu Mens Shoes</h5>
+                <h4 class="p-price">$279.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/5.jpg" alt="product">
+                <h5 class="p-name">BOSS Stretch-Cotton Logo Waitband Mens Trunks</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/6.jpg" alt="product">
+                <h5 class="p-name">BOSS <br> Bochiny-D Womens Skirt</h5>
+                <h4 class="p-price">$149.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/7.jpg" alt="product">
+                <h5 class="p-name">BOSS Casual Ammy 1 Womens Dress</h5>
+                <h4 class="p-price">$249.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/8.jpg" alt="product">
+                <h5 class="p-name">BOSS Iwarly Womens Oversized Jumper</h5>
+                <h4 class="p-price">$189.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/9.jpg" alt="product">
+                <h5 class="p-name">BOSS PChup 1 Mens T-Shirt</h5>
+                <h4 class="p-price">$99.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/10.jpg" alt="product">
+                <h5 class="p-name">BOSS Weedo 2 Relaxed Fit Organic Cotton Hoodie</h5>
+                <h4 class="p-price">$199.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/11.jpg" alt="product">
+                <h5 class="p-name">BOSS Two Pack Reverse Logo Socks</h5>
+                <h4 class="p-price">$19.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/12.jpg" alt="product">
+                <h5 class="p-name">BOSS Zero Tenn Nypu Contrast Mens Trainers</h5>
+                <h4 class="p-price">$159.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/13.jpg" alt="product">
+                <h5 class="p-name">BOSS Casual Damare Womens Jersey Dress</h5>
+                <h4 class="p-price">$159.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/14.jpg" alt="product">
+                <h5 class="p-name">BOSS Mirage Tenn Bu Mens Shoes</h5>
+                <h4 class="p-price">$369.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/15.jpg" alt="product">
+                <h5 class="p-name">BOSS Pixel S Envolope Logo Bag</h5>
+                <h4 class="p-price">$139.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/16.jpg" alt="product">
+                <h5 class="p-name">BOSS PChup 1 Mens T-Shirt</h5>
+                <h4 class="p-price">$99.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/17.jpg" alt="product">
+                <h5 class="p-name">BOSS Lovel 7 Mens Oversized Shirt</h5>
+                <h4 class="p-price">$199.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/18.jpg" alt="product">
+                <h5 class="p-name">BOSS Two Pack Minipattern</h5>
+                <h4 class="p-price">$29.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/19.jpg" alt="product">
+                <h5 class="p-name">BOSS Hybrid Lace-Up Trainers</h5>
+                <h4 class="p-price">$199.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/20.jpg" alt="product">
+                <h5 class="p-name">BOSS Wetalk Hooded French Terry Sweatshirt</h5>
+                <h4 class="p-price">$139.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/21.jpg" alt="product">
+                <h5 class="p-name">BOSS <br> Belt Bag Red Logo</h5>
+                <h4 class="p-price">$119.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/22.jpg" alt="product">
+                <h5 class="p-name">BOSS <br> Ethon Backpack</h5>
+                <h4 class="p-price">$139.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/23.jpg" alt="product">
+                <h5 class="p-name">BOSS Lovelohoodie Zip Up Overshirt Mens Jacket</h5>
+                <h4 class="p-price">$229.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/shop/24.jpg" alt="product">
+                <h5 class="p-name">BOSS Westart Relaxed Fit Mens Sweatshirt</h5>
+                <h4 class="p-price">$119.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination mt-2">
+                    <li class="page-item">
+                        <span class="page-link" my-lang="previous">Previous</span>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item" aria-current="page">
+                        <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" my-lang="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="assets/img/logo/hugo-boss-logo.png" alt="logo2">
+                <p class="pt-3" my-lang="plan">It is our vision to become the leading premium tech-driven fashion
+                    platform worldwide and in this context, we will revolutionize the way in which we interact with
+                    consumers. Our ambition is to double our business to EUR 4 billion in revenues by 2025 and to become
+                    one of the top-100 global brands.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2" my-lang="featured">Featured</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" my-lang="new">NEW ARRIVALS</a></li>
+                    <li><a href="#" my-lang="men">MEN</a></li>
+                    <li><a href="#" my-lang="women">WOMEN</a></li>
+                    <li><a href="#" my-lang="boys">BOYS</a></li>
+                    <li><a href="#" my-lang="girls">GIRLS</a></li>
+                    <li><a href="#" my-lang="shoes">SHOES</a></li>
+                    <li><a href="#" my-lang="sale">SALE</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2" my-lang="contact">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">ADDRES</h6>
+                    <p>123 STREET NAME, CITY, US</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">PHONE</h6>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">EMAIL</h6>
+                    <p>EMAIL@GMAIL.COM</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">INSTAGRAM</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/1.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/2.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/3.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/4.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/5.jpg" alt="INSTAGRAM">
+                    <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/6.jpg" alt="INSTAGRAM">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="assets/img/payment/payment.png" alt="payment">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <p>BOSS eComerce 2021. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="component/js/lang.js"></script>
+</body>
+
+</html>
