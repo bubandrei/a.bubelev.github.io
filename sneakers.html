@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="component/css/style.css">
+    <link rel="stylesheet" href="component/css/navbar.css">
+    <link rel="stylesheet" href="component/css/footer.css">
+    <link rel="stylesheet" href="component/css/adaptive.css">
+    <link rel="stylesheet" href="component/css/language.css">
+    <link rel="stylesheet" href="component/css/cart.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <img src="assets/img/logo/hugo-boss-logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-center ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" my-lang="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html" target="_blank" my-lang="shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="about">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" my-lang="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text"><i class="far fa-search"></i>
+                        <button onclick="opened()" class="cart-open"><i class="far fa-shopping-bag"></i></button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="lang" onclick="translate2('ru')"><img src="assets/img/icons-lang/rus.png"
+                                alt="ru" class="flag-icon"></button>
+                        <button class="lang" onclick="translate2('en')"><img src="assets/img/icons-lang/En.png" alt="en"
+                                class="flag-icon"></button>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container sproduct">
+        <div class="row mt-5 hoodieTitle">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="assets/img/shop/2.jpg" id="mainImg" alt="T-Shirt">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="assets/img/shop/2.jpg" width="100%" class="small-img" alt="T-Shirt">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="assets/img/shop/25.jpg" width="100%" class="small-img" alt="T-Shirt">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="assets/img/shop/26.jpg" width="100%" class="small-img" alt="T-Shirt">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="assets/img/shop/27.jpg" width="100%" class="small-img" alt="T-Shirt">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6 my-lang="road">Home / Mens</h6>
+                <h3 class="py-4">BOSS Titanium Runn Knst Mens Trainers</h3>
+                <h2>$199.00</h2>
+                <select name="changeSize" id="carCount">
+                    <option value="" my-lang="select">Select Size</option>
+                    <option value="">40</option>
+                    <option value="">41</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                </select>
+                <!-- <input type="number" value="1"> -->
+                <button onclick="addCar(0)" class="buy-btn" my-lang="cart">Add To Cart</button>
+                <h4 class="mt-5 mb-5" my-lang="details">Product Details</h4>
+                <span my-lang="detail">A loungewear top by BOSS Menswear, crafted in a cotton blend with a double-knit
+                    jacquard construction for luxurious softness. Featuring a hood with a contrast lining, this casual
+                    layer is designed in a color-block style with a bicolored logo print at the chest. Pair this
+                    loose-fitting loungewear top with other items from the range for coordinated comfort.
+                    Regular fit
+                    Neckline: Hooded</span>
+            </div>
+        </div>
+    </section>
+    <section id="featured" class="mt-5 pb-5 carouselhidden">
+        <div class="container text-center mt-5 pb-5">
+            <h3 my-lang="featured">Our Featured</h3>
+            <div my-lang="check">Here you can check out our new products BOSS</div>
+        </div>
+        <div id=carousel class="row mx-auto container-fluid img-container">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/1.jpg" alt="product">
+                <h5 class="p-name">BOSS ATHLEISURE Polo T-Shirt</h5>
+                <h4 class="p-price">$135.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/2.jpg" alt="product">
+                <h5 class="p-name">BOSS V Marson Pixel Artwork Gilet</h5>
+                <h4 class="p-price">$389.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/3.jpg" alt="product">
+                <h5 class="p-name">BOSS Tsummery Crew Neck T-Shirt</h5>
+                <h4 class="p-price">$79.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/4.jpg" alt="product">
+                <h5 class="p-name">BOSS Magneton Slim Fit Shirt</h5>
+                <h4 class="p-price">$139.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/1.jpg" alt="product">
+                <h5 class="p-name">BOSS ATHLEISURE Polo T-Shirt</h5>
+                <h4 class="p-price">$135.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/2.jpg" alt="product">
+                <h5 class="p-name">BOSS V Marson Pixel Artwork Gilet</h5>
+                <h4 class="p-price">$389.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/3.jpg" alt="product">
+                <h5 class="p-name">BOSS Tsummery Crew Neck T-Shirt</h5>
+                <h4 class="p-price">$79.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/img/featured/4.jpg" alt="product">
+                <h5 class="p-name">BOSS Magneton Slim Fit Shirt</h5>
+                <h4 class="p-price">$139.00</h4>
+                <button class="buy-btn" my-lang="buy">Buy now</button>
+            </div>
+        </div>
+        <div class="imgcarousel">
+            <button id="previous" onclick="scrollToPrevious()" class="styleArrow"><i class="fa fa-chevron-left"
+                    aria-hidden="true"></i></i></button>
+            <button id="next" onclick="scrollToNext()" class="styleArrow"><i class="fa fa-chevron-right"
+                    aria-hidden="true"></i></i></button>
+        </div>
+    </section>
+
+
+    <div class="general">
+        <div>
+            <div id="window" class="wrapper">
+                <button onclick="closed()" class="cart-close"><span></span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></button>
+                <div class="orderOverview">ORDER OVERVIEW</div>
+                <div id="product"> </div>
+                <div id="bucket"></div>
+            </div>
+        </div>
+
+
+
+        <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <img src="assets/img/logo/hugo-boss-logo.png" alt="logo2">
+                    <p class="pt-3" my-lang="plan"></p>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2" my-lang="featured"></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" my-lang="new"></a></li>
+                        <li><a href="#" my-lang="men"></a></li>
+                        <li><a href="#" my-lang="women"></a></li>
+                        <li><a href="#" my-lang="boys"></a></li>
+                        <li><a href="#" my-lang="girls"></a></li>
+                        <li><a href="#" my-lang="shoes"></a></li>
+                        <li><a href="#" my-lang="sale"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2" my-lang="contact"></h5>
+                    <div>
+                        <h6 class="text-uppercase">ADDRES</h6>
+                        <p>123 STREET NAME, CITY, US</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">PHONE</h6>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">EMAIL</h6>
+                        <p>EMAIL@GMAIL.COM</p>
+                    </div>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">INSTAGRAM</h5>
+                    <div class="row">
+                        <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/1.jpg" alt="INSTAGRAM">
+                        <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/2.jpg" alt="INSTAGRAM">
+                        <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/3.jpg" alt="INSTAGRAM">
+                        <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/4.jpg" alt="INSTAGRAM">
+                        <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/5.jpg" alt="INSTAGRAM">
+                        <img class="img-fluid w-25 h-100 m-2" src="assets/img/insta/6.jpg" alt="INSTAGRAM">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-5">
+                <div class="row container mx-auto">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <img src="assets/img/payment/payment.png" alt="payment">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <p>BOSS eComerce 2021. All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+            crossorigin="anonymous"></script>
+        <script src="component/js/lang.js"></script>
+        <script src="component/js/hoodie.js"> </script>
+        <script src="component/js/carousel.js"></script>
+        <script src="component/js/cart.js"></script>
+</body>
+
+</html>

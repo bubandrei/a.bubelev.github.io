@@ -30,7 +30,7 @@ const en = {
     sale:"SALE",
     previous:"Previous",
     next:"Next",
-    road:"Home / Mens Hoodie",
+    road:"Home / Mens",
     cart:"Add To Cart",
     details:"Product Details",
     detail:"A loungewear top by BOSS Menswear, crafted in a cotton blend with a double-knit jacquard construction for luxurious softness. Featuring a hood with a contrast lining, this casual layer is designed in a color-block style with a bicolored logo print at the chest. Pair this loose-fitting loungewear top with other items from the range for coordinated comfort. Regular fit Neckline: Hooded",
