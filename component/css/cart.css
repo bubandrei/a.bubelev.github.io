@@ -27,11 +27,11 @@
 }
 .cart-close{
     position: absolute;
-    right: 1%;
-    top: -1%;
+    color: black;
+    top: -5%;
     background: none;
     font-size: xx-large;
-    padding: 0px;
+    padding-left: 150px;
 }
 .cart-close:hover{
     background-color: unset;
