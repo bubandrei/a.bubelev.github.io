@@ -45,14 +45,17 @@ function closed(){
                             <div>${item.price * item.count}$</div>
                             </div>
                             </div>
-                            <div class="borderLine"><button onclick="deleteFromBucket(${index})">Delete</button></div>`
+                            <div class="borderLine"><button class="trash" onclick="deleteFromBucket(${index})"><i class="fas fa-trash-alt"></i></button></div>`
                             
         })
         if (bucketHtml === '') {
             bucketHtml = 'Your shopping bag is empty'
         } 
         else {
-            bucketHtml += `<div>Всего: ${total}</div>`
+            bucketHtml += `<div class="totalAll">
+                            <div class="priceAll">Total Price: ${total}$</div>
+                            <div class="totalAll"><button class="buyAll">BUY</button></div>
+                            </div>`
         }
         bucketContainer.innerHTML = bucketHtml;
     }
