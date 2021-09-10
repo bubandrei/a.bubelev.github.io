@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="component/css/pagination.css">
     <link rel="stylesheet" href="component/css/adaptive.css">
     <link rel="stylesheet" href="component/css/language.css">
+    <link rel="stylesheet" href="component/css/cart.css">
     <style>
         .product img {
             width: 100%;
@@ -58,7 +59,7 @@
                     </li>
                     <li class="nav-item">
                         <input type="text"><i class="far fa-search"></i>
-                        <i class="far fa-shopping-bag"></i>
+                        <button onclick="opened()" class="cart-open"><i class="far fa-shopping-bag"></i></button>
                     </li>
                     <li class="nav-item">
                         <button class="lang" onclick="translate2('ru')"><img src="assets/img/icons-lang/rus.png"
@@ -239,6 +240,16 @@
         </div>
     </section>
 
+    <div class="general">
+        <div>
+            <div id="window" class="wrapper">
+                <button onclick="closed()" class="cart-close"><span></span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></button>
+                <div class="orderOverview">ORDER OVERVIEW</div>
+                <div id="product"> </div>
+                <div id="bucket"></div>
+            </div>
+        </div>
+
 
 
     <footer class="mt-5 py-5">
@@ -314,6 +325,7 @@
         integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
         crossorigin="anonymous"></script>
     <script src="component/js/lang.js"></script>
+    <script src="component/js/cart.js"></script>  
 </body>
 
 </html>
