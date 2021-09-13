@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            /*grid-template-rows: 70px;*/
-        }
-    </style>
+    <title>Title</title>
 </head>
-
 <body>
-    <div class="calendar">
-        <div id="calendar" class="grid"></div>
+<div id="product">
+    <br>
+    <br>
+    <br>
+</div>
+<label for="carCount">Кол-во</label>
+<select name="car" id="carCount">
+    <option value="1">1</option>
+    <option value="3">3</option>
+    <option value="5">5</option>
+</select>
+<p>Корзина:</p>
+<div id="bucket">
 
-    </div>
-
-
-
-
-    <script>
-        let date = new Date();
-  const fullYear = date.getFullYear(); //выводит целый год
-        const month = date.getMonth();//выводит месяц
-       
-      
-  var days_in_april = 32 - new Date(fullYear, month, 32).getDate();
-
-//   console.log(days_in_april)
-  let html = '';
-  for (let i = 1; i <= days_in_april; i++) {
-            
-           
-            html += `<div>${i}</div>`;
-        }
-        calendar.innerHTML = html;
-
-
-    </script>
+</div>
 
 </body>
+<script>
+    const bucketContainer = document.getElementById('bucket');
+    const counterSelect = document.getElementById('carCount');
+    const productContainer = document.getElementById('product');
+    const BUCKET_KEY = 'bucket';
+    const bucketProducts = JSON.parse(localStorage.getItem(BUCKET_KEY)) || [];
+    const bucketList = [];
+    generateBucket();
+    const products = [{
+        title: 'Audi Q3',
+        price: 20000,
+    }, {
+        title: 'Audi Q5',
+        price: 30000,
+    },
+        {
+            title: 'Audi Q7',
+            price: 40000,
+        },
+        {
+            title: 'Audi Q8',
+            price: 50000,
+        }]
 
+    let html = ''
+    products.map((item, index) => {
+        html += `<div>Название${item.title}<br/>
+                    Цена: ${item.price}$<br/>
+                    <button onclick="addCar(${index})">Добавить в корзину</button> </div>`
+    })
+
+    function generateBucket() {
+        let bucketHtml = ''
+        let total = 0;
+        bucketProducts.forEach((item, index) => {
+            total += item.price * (item.count || 1);
+            bucketHtml += `<div>Название${item.title}
+                    Цена: ${item.price}
+                    <button onclick="add(${index}, -1)">-</button>
+                    Количество: ${item.count}
+                    <button onclick="add(${index}, 1)">+</button>
+                    Всего: ${item.price * item.count}
+                    <button onclick="deleteFromBucket(${index})">Удалить из корзины</button> </div>`
+        })
+        if (bucketHtml === '') {
+            bucketHtml = 'Здесь будут ваши продукты'
+        } else {
+            bucketHtml += `<div>Всего: ${total}</div>`
+        }
+        bucketHtml+=`<div>${bucketProducts.length}</div>`
+        bucketContainer.innerHTML = bucketHtml;
+    }
+
+
+    function add(carIndex, num) {
+        const car = bucketProducts[carIndex];
+        car.count = car.count + num;
+        if (car.count === 0) {
+            bucketProducts.splice(carIndex, 1)
+        }
+        localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
+        generateBucket();
+    }
+
+    function deleteFromBucket(bucketItemIndex) {
+        bucketProducts.splice(bucketItemIndex, 1);
+        localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
+        generateBucket();
+    }
+
+    function addCar(carIndex) {
+        const count = parseInt(counterSelect.value) || 1;
+        const car = products[carIndex];
+        const foundCar = bucketProducts.find(item => item.title === car.title);
+        if (foundCar) {
+            foundCar.count+=count;
+        } else {
+            car.count = count
+            bucketProducts.push(car);
+        }
+        generateBucket();
+        localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
+    }
+
+    productContainer.innerHTML = html;
+</script>
 </html>

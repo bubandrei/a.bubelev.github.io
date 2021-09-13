@@ -12,6 +12,7 @@ function closed(){
 
 
     const bucketContainer = document.getElementById('bucket');
+    const dropContainer = document.getElementById('drop');
     const counterSelect = document.getElementById('carCount');
     const productContainer = document.getElementById('product');
     const BUCKET_KEY = 'bucket';
@@ -28,10 +29,10 @@ function closed(){
         price: 199,
     }
 ]
-
     let html = ''
     function generateBucket() {
         let bucketHtml = ''
+        let dropHtml = ''
         let total = 0;
         bucketProducts.forEach((item, index) => {
             total += item.price * item.count;
@@ -63,6 +64,9 @@ function closed(){
                             <div class="totalAll"><button class="buyAll">BUY</button></div>
                             </div>`
         }
+        dropHtml+=`<div>${bucketProducts.length}</div>`
+      
+        dropContainer.innerHTML = dropHtml;
         bucketContainer.innerHTML = bucketHtml;
     }
 

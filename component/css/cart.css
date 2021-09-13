@@ -150,3 +150,18 @@
 .countTitle{
     font-weight: 900;
 }
+#drop{
+    position: absolute;
+    background-color: coral;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    top: 0px;
+}
+
