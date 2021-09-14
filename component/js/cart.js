@@ -13,6 +13,7 @@ function closed(){
     const productContainer = document.getElementById('product');
     const BUCKET_KEY = 'bucket';
     const bucketProducts = JSON.parse(localStorage.getItem(BUCKET_KEY)) || [];
+
     generateBucket();
     const products = [{
         img: src="assets/img/shop/1.jpg",
@@ -60,12 +61,10 @@ function closed(){
                             <div class="totalAll"><button class="buyAll">BUY</button></div>
                             </div>`
         }
-        dropHtml+=`<div>${bucketProducts.length}</div>`
-      
+        dropHtml+=`<div>${bucketProducts.length}</div>` 
         dropContainer.innerHTML = dropHtml;
         bucketContainer.innerHTML = bucketHtml;
     }
-
     function add(clothesIndex, num) {
         const clothes = bucketProducts[clothesIndex];
         clothes.count = clothes.count + num;
@@ -75,17 +74,13 @@ function closed(){
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
         generateBucket();
     }
-
     function deleteFromBucket(bucketItemIndex) {
         document.getElementById('drop').style.display = 'none';
         bucketProducts.splice(bucketItemIndex, 1);
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
         generateBucket();
     }
-
     function addClothes(clothesIndex) {
-        // document.getElementById("product").innerHTML = document.getElementById("carCount").value;
-        
         const count = parseInt(counterSelect.value) || 1;
         const wear = products[clothesIndex];
         const foundClothes = bucketProducts.find(item => item.title === wear.title);
@@ -100,14 +95,3 @@ function closed(){
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
     }
     productContainer.innerHTML = html;
-
-
-
-
-    // function addClothes(){
-    //     document.querySelector('.five').onchange = () =>{
-    //         let data = document.querySelector('.five').value;
-    //         bucketContainer.innerHTML = data;
-    //     // console.log(data)
-    // }
-    // }
