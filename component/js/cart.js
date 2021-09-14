@@ -3,14 +3,10 @@ function opened(){
     dilog.classList.add('opened');
     document.body.classList.add('general');
 }
-
 function closed(){
     dilog.classList.remove('opened');
     document.body.classList.remove('general');
 }
-
-
-
     const bucketContainer = document.getElementById('bucket');
     const dropContainer = document.getElementById('drop');
     const counterSelect = document.getElementById('carCount');
@@ -70,7 +66,6 @@ function closed(){
         bucketContainer.innerHTML = bucketHtml;
     }
 
-
     function add(clothesIndex, num) {
         const clothes = bucketProducts[clothesIndex];
         clothes.count = clothes.count + num;
@@ -82,12 +77,15 @@ function closed(){
     }
 
     function deleteFromBucket(bucketItemIndex) {
+        document.getElementById('drop').style.display = 'none';
         bucketProducts.splice(bucketItemIndex, 1);
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
         generateBucket();
     }
 
     function addClothes(clothesIndex) {
+        // document.getElementById("product").innerHTML = document.getElementById("carCount").value;
+        
         const count = parseInt(counterSelect.value) || 1;
         const wear = products[clothesIndex];
         const foundClothes = bucketProducts.find(item => item.title === wear.title);
@@ -96,9 +94,20 @@ function closed(){
         } else {
             wear.count = count
             bucketProducts.push(wear);
+            document.getElementById('drop').style.display = 'flex';
         }
         generateBucket();
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
     }
-
     productContainer.innerHTML = html;
+
+
+
+
+    // function addClothes(){
+    //     document.querySelector('.five').onchange = () =>{
+    //         let data = document.querySelector('.five').value;
+    //         bucketContainer.innerHTML = data;
+    //     // console.log(data)
+    // }
+    // }
