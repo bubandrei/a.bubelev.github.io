@@ -38,7 +38,7 @@ button:hover{
     padding-top: 60px;
 }
 .sproduct select{
-    display: block;
+    display: none;
     padding: 5px 10px;
     margin: 20px 0px;
 }

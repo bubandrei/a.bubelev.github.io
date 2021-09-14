@@ -164,5 +164,8 @@
     right: 0px;
     top: 0px;
     display: none;
-    
+}
+.wrapperSize{
+    display: flex;
+    justify-content: space-between;
 }

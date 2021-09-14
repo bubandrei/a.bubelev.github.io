@@ -21,7 +21,7 @@ function closed(){
         price: 249,
     },
     {
-        img: src="assets/img/shop/2.jpg",
+        img: src="assets/img/shop/31.jpg",
         title: 'BOSS Titanium Run K Mens Trainers',
         price: 199,
     }
@@ -37,8 +37,17 @@ function closed(){
                            <img class="sizeImg" src="${item.img}">
                             <div class="titleUnit">
                             <div class="titleContent">${item.title}</div>
+                            <div class="wrapperSize">
+                            <select class="selectSize">
+                            <option value="1" my-lang="select">Select Size</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            </select>
                             <div class="unitePrice">Unite Price: ${item.price}$</div>
                             </div>
+                            </div>      
                             <div class="quantity">
                             <div>Quantity:</div>
                             <span><button class="cartCount" onclick="add(${index}, -1)">-</button>
