@@ -62,13 +62,15 @@ function closed(){
                             
         })
         if (bucketHtml === '') {
-            bucketHtml = 'Your shopping bag is empty'
+            bucketHtml = 'Your shopping bag is empty';
+            document.getElementById('drop').style.display = 'none';
         } 
         else {
             bucketHtml += `<div class="totalAll">
                             <div class="priceAll">Total Price: ${total}$</div>
                             <div class="totalAll"><button class="buyAll">BUY</button></div>
-                            </div>`
+                            </div>`;
+                            document.getElementById('drop').style.display = 'flex';
         }
         dropHtml+=`<div>${bucketProducts.length}</div>` 
         dropContainer.innerHTML = dropHtml;
@@ -84,7 +86,6 @@ function closed(){
         generateBucket();
     }
     function deleteFromBucket(bucketItemIndex) {
-        document.getElementById('drop').style.display = 'none';
         bucketProducts.splice(bucketItemIndex, 1);
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
         generateBucket();
@@ -98,7 +99,6 @@ function closed(){
         } else {
             wear.count = count
             bucketProducts.push(wear);
-            document.getElementById('drop').style.display = 'flex';
         }
         generateBucket();
         localStorage.setItem(BUCKET_KEY, JSON.stringify(bucketProducts))
